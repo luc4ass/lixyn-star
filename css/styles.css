@@ -1,0 +1,200 @@
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #000;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #555;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #333;
+  }
+  
+  ::selection {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Ginto";
+  }
+  
+  h3 {
+    font-weight: 500;
+  }
+  
+  h1 {
+    font-size: 3.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #0b0a15;
+    overflow: hidden;
+    background-image: radial-gradient(circle, rgb(5, 16, 37) 0%, rgb(0, 0, 0) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .content {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    max-height: 100vh;
+  }
+  
+  section {
+    scroll-snap-align: start;
+  }
+  
+  .header {
+    display: flex;
+    color: #fff;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 10%;
+  }
+  .header .languages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .header .languages img {
+    width: 32px;
+    height: 32px;
+  }
+  .header .languages img:not(:last-child) {
+    margin-right: 1em;
+  }
+  .header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    transition: all 0.4s cubic-bezier(0.2, 0.6, 0.2, 1);
+  }
+  .header h1 div {
+    overflow: hidden;
+    position: relative;
+    height: 65px;
+    padding-top: 10px;
+    margin-top: -10px;
+  }
+  .header h1 div ul {
+    padding-left: 0em;
+  }
+  .header h1 div li {
+    margin-left: 0;
+    padding-left: 0;
+    color: #eee;
+    font-weight: 700;
+    height: 45px;
+    margin-bottom: 45px;
+    display: block;
+  }
+  .header h1 .flip3 {
+    animation: flip3 8s cubic-bezier(0.33, 1, 0.22, 1.2) infinite;
+  }
+  .header img.avatar {
+    border-radius: 100%;
+    width: 250px;
+    margin-right: 5px;
+  }
+
+
+
+  
+
+  nav.navbar {
+    position: fixed;
+    top: 0;
+    padding: 30px 10%;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100vw - 20%);
+    color: #fff;
+  }
+  nav.navbar .logo {
+    font-family: "Ginto";
+    font-size: 1.6rem;
+  }
+  nav.navbar .links .link:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  button.rrss {
+    transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    color: #fff;
+    padding: 8px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    background: none;
+    border: none;
+  }
+  button.rrss:hover {
+    scale: 1.09;
+    background: rgba(0, 71, 151, 0.4);
+  }
+
+  #btn {
+    transition: 0.5s;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+    background-color: rgb(0, 46, 110);
+    border-radius: 50px;
+    padding: 10px 20px;
+  }
+
+  #btn:hover {
+    transition: 0.8s;
+    scale: 1.15;
+  }
+  
+  @keyframes flip3 {
+    0% {
+      margin-top: -270px;
+    }
+    5% {
+      margin-top: -180px;
+    }
+    33% {
+      margin-top: -180px;
+    }
+    38% {
+      margin-top: -90px;
+    }
+    66% {
+      margin-top: -90px;
+    }
+    71% {
+      margin-top: 0px;
+    }
+    95% {
+      margin-top: 0px;
+    }
+    100% {
+      margin-top: -270px;
+    }
+
+    
+  }
+  
+  
